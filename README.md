@@ -1,12 +1,12 @@
-# Factor-Risk-Decomposition-and-Rolling-Beta-Analysis-of-the-NIFTY-50
+Factor Risk Decomposition and Rolling Beta Analysis of the NIFTY 50:
 
-#INTRODUCTION:
+INTRODUCTION:
 The goal of this project is to build a full multi-factor and time-series forecasting framework for the NIFTY 50. It brings together Fama–French factors, key macro indicators, and machine-learning models to understand what drives the index and how it might move ahead. The work looks at how NIFTY returns have behaved over time, how factor sensitivities shift across market cycles, and how much each factor actually explains when tested through rolling regressions. It then builds forward-looking forecasts using ARIMA and LSTM models to compare accuracy and stability. In short, the project aims to show how global conditions, domestic trends, and style-based factors shape Indian equities, and which forecasting methods capture that behaviour most reliably.
 
 <img width="1189" height="390" alt="image" src="https://github.com/user-attachments/assets/13fcede1-1925-4cb6-9cad-673354c1bd1a" />
 
 
-#SUMMARY:
+SUMMARY:
 This project builds a full asset-pricing and forecasting framework for the NIFTY 50. It brings together market data, Fama–French factors, macro-yield variables, and a mix of time-series models to understand what drives the index and how it might behave ahead.
 
 Five years of NIFTY data were merged with daily factor datasets, including market excess return (Rm−Rf), SMB, HML, RMW, CMA, momentum, and the U.S. 10-year Treasury yield (DGS10). After cleaning and aligning the dates, daily NIFTY returns were converted into excess returns using the risk-free rate.
