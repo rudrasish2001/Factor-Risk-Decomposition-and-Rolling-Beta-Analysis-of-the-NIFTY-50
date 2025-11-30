@@ -91,7 +91,7 @@ Interpretation:
 <img width="799" height="686" alt="image" src="https://github.com/user-attachments/assets/2ea10de5-d437-41d1-83c4-c7d72a75d70e" />
 
 
-6. Actual vs ARIMA vs LSTM – 6-Month Forecast
+6. Actual vs ARIMA vs LSTM 6 Month Forecast
 
 A combined plot comparing actual NIFTY prices with 6-month forecasts from ARIMA and LSTM.
 
@@ -102,7 +102,14 @@ Interpretation:
 3. Actual prices show higher volatility than model predictions, consistent with machine learning smoothing.
 
 <img width="1189" height="490" alt="image" src="https://github.com/user-attachments/assets/19ac6f83-6c54-498e-ba01-20230d5420fb" />
+<img width="877" height="351" alt="image" src="https://github.com/user-attachments/assets/1b725f5b-e8d4-45cb-80ce-5f5b050b06a5" />
+<img width="1003" height="428" alt="image" src="https://github.com/user-attachments/assets/f8883923-5266-4728-a215-17a47cdb943f" />
 
+SUMMARY: ARIMA assumes stability and predicts no major change, while LSTM learns recent weakening momentum and predicts a gradual 3 month soft decline in NIFTY.
+
+FOR STOCK INDICES:
+I. ARIMA is good short-term (1–7 days)
+II. LSTM is better medium-term (1–3 months)
 
 7. Previous-3-Month Predictions vs Next-3-Month Forecasts
 
@@ -115,3 +122,23 @@ Interpretation:
 3. Future LSTM predictions show a mild downward slope, consistent with observed weakening momentum.
 
 <img width="1188" height="490" alt="image" src="https://github.com/user-attachments/assets/8d790ab9-57c6-4dc7-908d-e22676060d73" />
+<img width="1003" height="428" alt="image" src="https://github.com/user-attachments/assets/1101f56d-cb98-44bb-abfe-0c89d8ba3387" />
+
+
+8. Cumulative Factor Returns: Shows how each factor contributed over time. The market factor dominates long-term behaviour, while HML adds steady value and SMB stays mostly flat. Overall, NIFTY’s performance is primarily driven by broad market risk.
+
+<img width="990" height="418" alt="image" src="https://github.com/user-attachments/assets/7e29765b-3fe1-445f-89ce-3a42f4865b00" />
+
+
+9. RISK ANALYSIS INTERPRETATION: 
+
+1. Across all risk dimensions volatility, tail risk, drawdowns, regime shifts, and factor exposure NIFTY is structurally more stable than global equity factors. Its sensitivity is highest to U.S. interest-rate regimes (DGS10) and lowest to U.S. market risk (Mkt-RF). 
+2. Factor exposures vary by cycle: market beta rises in expansions, SMB beta turns positive during India’s small-cap rally, and HML remains consistently positive due to value-heavy Indian sectors. 
+3. Tail risk analysis shows that factor portfolios exhibit deep drawdowns and higher CVaR compared to NIFTY’s shallow loss structure. Overall, NIFTY behaves like a low-volatility market with shifting style exposures and strong macro-rate dependence, rather than a market driven by global equity factors.
+
+<img width="1274" height="796" alt="image" src="https://github.com/user-attachments/assets/18fff92f-aa76-409e-9eb7-c04f6850dea2" />
+<img width="1390" height="990" alt="image" src="https://github.com/user-attachments/assets/17f8476e-cbaf-46fd-bd6c-45018b28b483" />
+<img width="1642" height="1190" alt="image" src="https://github.com/user-attachments/assets/d82052bf-2e28-4eb7-bc4e-5b9fe6f7f335" />
+
+
+
