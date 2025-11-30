@@ -5,8 +5,48 @@ The goal of this project is to build a full multi-factor and time series forecas
 
 <img width="1189" height="390" alt="image" src="https://github.com/user-attachments/assets/13fcede1-1925-4cb6-9cad-673354c1bd1a" />
 
+OVERVIEW:
+
+1. This project constructs a complete multi-factor model using daily data for Market Excess Return (Rm-Rf), Size (SMB), Value (HML), Profitability (RMW), Investment (CMA), Momentum, and the U.S. 10 year Treasury Yield (DGS10).
+2. Five years of NIFTY 50 data were merged with these factors, cleaned, converted into excess returns, and analyzed using both cross-sectional OLS regressions and rolling-window techniques.
+
+
+Key Findings:
+
+A. Factor Sensitivities:
+
+1. The market factor remains the dominant driver of NIFTY's return structure across the sample period.
+2. SMB beta becomes positive in 2024-25, reflecting India's strong mid-cap and small-cap outperformance during this phase.
+3. HML maintains a consistently positive beta, driven by value-heavy sectors such as banks, metals, industrials, and PSU stocks.
+4. NIFTY shows a strong negative sensitivity to U.S. 10-year Treasury yields (approximately -0.67), highlighting the significant impact of global interest-rate cycles on Indian equity flows.
+
+B. Rolling Beta and R' Dynamics:
+
+1. Market beta increases during expansionary periods (2021 and 2024) and declines during monetary tightening phases (2022-23).
+Rolling R' falls sharply in 2022-23, indicating that factor models struggle during macroeconomic stress and global rate shocks.
+3. Residual volatility rises sharply during turbulence but stabilizes once market conditions improve in
+2024.
+
+C. Cumulative Factor Contributions:
+
+1. Market excess return accounts for the majority of NIFTY's long-term excess performance.
+2. HML contributes steady positive returns throughout the period, while SMB contributes meaningfully mainly in 2024-25.
+3. DGS10 provides unique explanatory power by capturing India's sensitivity to global macro-rate movements.
+
+D. Risk Analysis:
+
+1. ﻿﻿﻿Advanced risk diagnostics show that NIFTY exhibits shallower tail losses (lower CVaR) compared to
+Fama-French factor portfolios.
+﻿﻿﻿2. Regime-shift analysis identifies clear transitions in volatility and beta around global tightening cycles, especially in (2022-23).
+﻿﻿﻿3. Drawdown behavior confirms that NIFTY is structurally more stable than comparable U.S. factor portfolios.
+﻿﻿﻿4. Volatility clustering intensifies during inflation-driven stress periods and phases of strong foreign
+portfolio outflows.
+5. ﻿﻿﻿NIFTY shows its highest sensitivity to global rate cycles (DGS10) and its lowest sensitivity to U.S. market excess return (Mkt-RF).
+﻿﻿﻿6. Overall, the index behaves as a low-volatility, rate-sensitive market with evolving style exposures depending on the macroeconomic environment.
+
 
 SUMMARY:
+
 This project builds a full asset-pricing and forecasting framework for the NIFTY 50. It brings together market data, Fama French factors, macro-yield variables, and a mix of time-series models to understand what drives the index and how it might behave ahead.
 
 Five years of NIFTY data were merged with daily factor datasets, including market excess return (Rm−Rf), SMB, HML, RMW, CMA, momentum, and the U.S. 10-year Treasury yield (DGS10). After cleaning and aligning the dates, daily NIFTY returns were converted into excess returns using the risk-free rate.
