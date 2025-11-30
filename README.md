@@ -16,14 +16,14 @@ Key Findings:
 A. Factor Sensitivities:
 
 1. The market factor remains the dominant driver of NIFTY's return structure across the sample period.
-2. SMB beta becomes positive in 2024-25, reflecting India's strong mid-cap and small-cap outperformance during this phase.
+2. SMB beta becomes positive in (2024-25), reflecting India's strong mid-cap and small-cap outperformance during this phase.
 3. HML maintains a consistently positive beta, driven by value-heavy sectors such as banks, metals, industrials, and PSU stocks.
 4. NIFTY shows a strong negative sensitivity to U.S. 10-year Treasury yields (approximately -0.67), highlighting the significant impact of global interest-rate cycles on Indian equity flows.
 
 B. Rolling Beta and R' Dynamics:
 
 1. Market beta increases during expansionary periods (2021 and 2024) and declines during monetary tightening phases (2022-23).
-Rolling R' falls sharply in 2022-23, indicating that factor models struggle during macroeconomic stress and global rate shocks.
+Rolling R' falls sharply in (2022-23), indicating that factor models struggle during macroeconomic stress and global rate shocks.
 3. Residual volatility rises sharply during turbulence but stabilizes once market conditions improve in
 2024.
 
@@ -47,7 +47,7 @@ portfolio outflows.
 
 SUMMARY:
 
-This project builds a full asset-pricing and forecasting framework for the NIFTY 50. It brings together market data, Fama French factors, macro-yield variables, and a mix of time-series models to understand what drives the index and how it might behave ahead.
+This project builds a full asset-pricing and forecasting framework for the NIFTY 50. It brings together market data, Fama French factors, macro yield variables, and a mix of time-series models to understand what drives the index and how it might behave ahead.
 
 Five years of NIFTY data were merged with daily factor datasets, including market excess return (Rm−Rf), SMB, HML, RMW, CMA, momentum, and the U.S. 10-year Treasury yield (DGS10). After cleaning and aligning the dates, daily NIFTY returns were converted into excess returns using the risk-free rate.
 
@@ -57,7 +57,7 @@ Rolling 252 day regressions reveal how these relationships change through time. 
 
 Rolling R² drops hard during macro volatility, which means the factor model explains less when local shocks or idiosyncratic behaviour take over. Residual volatility spikes during 2022–23, then settles again once conditions improve in 2024.
 
-Cumulative factor-contribution charts show that market movement accounts for most of the excess performance. SMB and HML add smaller but meaningful layers, while yield variables bring in independent information that helps explain cross-border rate sensitivity.
+Cumulative factor contribution charts show that market movement accounts for most of the excess performance. SMB and HML add smaller but meaningful layers, while yield variables bring in independent information that helps explain cross-border rate sensitivity.
 
 For forecasting, the project tested ARIMA, SARIMAX, and LSTM models. The LSTM produced smoother and more flexible projections. ARIMA and SARIMAX stayed closer to flat paths, which matches the reality of near zero average daily returns. A combined six month forecast plot blends these outputs with the final months of actual data for a practical view of what may lie ahead.
 
